@@ -1,0 +1,16 @@
+<div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Temperature:</strong> <span id="temp"></span> &#8451;</p>
+                                <p><strong>Feels Like:</strong> <span id="feelsLike"></span> &#8451;</p>
+                                <p><strong>Minimum Temperature:</strong> <span id="minTemp"></span> &#8451;</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+                                <p><strong>Pressure:</strong> <span id="pressure"></span> hPa</p>
+                                <p><strong>Maximum Temperature:</strong> <span id="maxTemp"></span> &#8451;</p>
+                            </div>
+                        </div>
+
+
+
+                        modal boofy

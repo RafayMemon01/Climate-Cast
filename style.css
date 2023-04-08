@@ -19,11 +19,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+.no-display{
+    display: none;
+}
 
 .heading {
     display: flex;
     justify-content: center;
     margin-top: 10%;
+    flex-direction: column;
 }
 
 .heading h1 {

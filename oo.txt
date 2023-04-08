@@ -18,21 +18,17 @@
             <h1>
                 Climate Cast
             </h1>
-            <p id="result" style="color: red ;" class="no-display">Error To load weather detail</p>
         </div>
-        <form 
-        
-        >
-
-            <div class="form mb-3">
-                <input type="text" class="form-control transparent-input " id="cityName"  placeholder="Enter Your City Name">
-                <!-- <label for="floatingInput transparent-input">Enter City</label> -->
+        <form onsubmit="getWheather();return false">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control transparent-input" id="floatingInput" placeholder="City">
+                <label for="floatingInput transparent-input">Enter City</label>
             </div>
             <!-- <label for="userCity">Your City</label><br>
             <input type="text" id="userCity" placeholder="Enter Your City Name"> -->
             <br>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Wheather" onclick="getWheather()" >Check
+            <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Wheather">Check
                 Weather</button>
             
 
@@ -42,35 +38,23 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5 modalHeading" id="exampleModalLabel " ></h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <div class="col-md-6">
-                                <p><strong>Temperature:</strong> <span id="temp"></span> &#8451;</p>
-                                <p><strong>Feels Like:</strong> <span id="feelsLike"></span> &#8451;</p>
-                                <p><strong>Minimum Temperature:</strong> <span id="minTemp"></span> &#8451;</p>
-                            </div>
-                            <div class="col-md-6">
-                                <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
-                                <p><strong>Pressure:</strong> <span id="pressure"></span> hPa</p>
-                                <p><strong>Maximum Temperature:</strong> <span id="maxTemp"></span> &#8451;</p>
-                            </div>
-                        </div>
+                            ...
                         </div>
                         <div class="modal-footer">
-                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button> -->
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </div>
             </div>
         </form>
-        
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
         <script src="script.js" type="module"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
