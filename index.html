@@ -20,35 +20,34 @@
             </h1>
             <p id="result" style="color: red ;" class="no-display">Error To load weather detail</p>
         </div>
-        <form 
-        
-        >
+        <form>
 
             <div class="form mb-3">
-                <input type="text" class="form-control transparent-input " id="cityName"  placeholder="Enter Your City Name">
+                <input type="text" class="form-control transparent-input " id="cityName"
+                    placeholder="Enter Your City Name">
                 <!-- <label for="floatingInput transparent-input">Enter City</label> -->
             </div>
             <!-- <label for="userCity">Your City</label><br>
             <input type="text" id="userCity" placeholder="Enter Your City Name"> -->
             <br>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Wheather" onclick="getWheather()" >Check
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Wheather"
+                onclick="getWheather()">Check
                 Weather</button>
-            
+
 
             <!-- Modal -->
-            <div class="modal fade" id="Wheather" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="Wheather" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5 modalHeading" id="exampleModalLabel " ></h1>
+                            <h1 class="modal-title fs-5 modalHeading" id="exampleModalLabel "></h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="col-md-6">
                                 <p><strong>Temperature:</strong> <span id="temp"></span> &#8451;</p>
-                                <p><strong>Feels Like:</strong> <span id="feelsLike"></span> &#8451;</p>
+                                <p><strong>Feels Like:</strong> <span class="feelsLike"></span> &#8451;</p>
                                 <p><strong>Minimum Temperature:</strong> <span id="minTemp"></span> &#8451;</p>
                             </div>
                             <div class="col-md-6">
@@ -57,29 +56,29 @@
                                 <p><strong>Maximum Temperature:</strong> <span id="maxTemp"></span> &#8451;</p>
                             </div>
                         </div>
-                        </div>
-                        <div class="modal-footer">
-                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-primary">Save changes</button> -->
-                        </div>
                     </div>
                 </div>
             </div>
-        </form>
-        
+    </div>
+    </form>
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-        <script src="script.js" type="module"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-            integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-            crossorigin="anonymous"></script>
+    <script src="script.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 
 </body>
 
