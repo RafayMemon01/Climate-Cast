@@ -10,13 +10,17 @@ window.getWheather = function () {
   // Make a request for a user with a given ID
   axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_Key}&units=metric`)
     .then(function (response) {
+      
       // handle success
       console.log(response.data);
-      let heading = document.querySelector(".modalHeading").innerHTML = `Climate Of ${cityName}`;
+      let heading = document.querySelector(".modalHeading").innerHTML = `Climate Of ${response.data.name}`;
       let temp = document.querySelector("#temp").innerHTML = `${response.data.main.temp}`;
 
-      let feelsLike = document.querySelector(".feelsLike").innerHTML = `${response.data.main.temp}`;
-      let minTemp = document.querySelector("#minTemp").innerHTML = `${response.data.main.temp}`;
+      let feelsLike = document.querySelector(".feelsLike").innerHTML = `${response.data.main.feels_like}`;
+      let minTemp = document.querySelector("#minTemp").innerHTML = `${response.data.main.temp_min}`;
+      let maxTemp = document.querySelector("#maxTemp").innerHTML = `${response.data.main.temp_max}`;
+      let humidity = document.querySelector("#humidity").innerHTML = `${response.data.main.humidity}`;
+      let pressure = document.querySelector("#pressure").innerHTML = `${response.data.main.pressure}`;
     })
     .catch(function (error) {
       // handle error
